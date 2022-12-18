@@ -4,6 +4,10 @@ Webman的DNS服务器插件，可以实现Webman启动时运行一个DNS服务�
 
 > 注意：默认为udp53端口，需要ROOT权限
 
+[Github](https://github.com/ywnsya/webman-dns)
+
+[LaysenseRepo](https://git.laysense.com/enoch/Webman-Dns)
+
 ---
 
 ## 支持的DNS类型：
@@ -26,7 +30,6 @@ Webman的DNS服务器插件，可以实现Webman启动时运行一个DNS服务�
 composer require laysense/dns
 ```
 
-
 ## 配置
 
 > 配置文件位于 /config/plugin/laysense/dns/process.php
@@ -42,7 +45,6 @@ return [
     ],
 ];
 ```
-
 
 ## 使用
 
@@ -79,7 +81,7 @@ class DnsController
 
         #此处请根据业务需要，通过判断$name和$rip返回正确的数据
         #详情请参见 https://github.com/ywnsya/workerman-dns 尤其是 https://github.com/ywnsya/Workerman-DNS/blob/master/start.php 中的用法
-      
+    
         $send['detail']='dns.laysense.com';
         $send['ttl']=30;
         $send['type']='PTR';
@@ -94,9 +96,7 @@ class DnsController
 }
 ```
 
-
 具体的使用方式请参照 [Workerman-DNS](https://www.workerman.net/a/1439) ([Github](https://github.com/ywnsya/workerman-dns)) 下的start.php
-
 
 ## 赞助(我不要脸)
 
