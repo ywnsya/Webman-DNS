@@ -1,0 +1,13 @@
+{
+  "name": "laysense/dns",
+  "type": "library",
+  "license": "MIT",
+  "description": "Webman plugin laysense/dns. You can making a DNS Server with Webman now",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Laysense\\Dns\\": "src"
+    }
+  }
+}
