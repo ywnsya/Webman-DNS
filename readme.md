@@ -1,6 +1,7 @@
 # Webman DNS
 
 Webman的DNS服务器插件，可以实现Webman启动时运行一个DNS服务器
+请不要用于生产环境。
 
 > 注意：默认为udp53端口，需要ROOT权限
 
@@ -25,6 +26,8 @@ Webman的DNS服务器插件，可以实现Webman启动时运行一个DNS服务�
 ---
 
 ## 安装
+
+在确保已经安装webman后执行
 
 ```shell
 composer require laysense/dns
@@ -96,7 +99,8 @@ class DnsController
 }
 ```
 
-具体的使用方式请参照 [Workerman-DNS](https://www.workerman.net/a/1439) ([Github](https://github.com/ywnsya/workerman-dns)) 下的start.php
+具体的使用方式请参照 [Workerman-DNS](https://git.laysense.com/enoch/Workerman-DNS) ([Github](https://github.com/ywnsya/workerman-dns)) 下的start.php
+
 
 ## 赞助(我不要脸)
 
