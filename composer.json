@@ -1,7 +1,7 @@
 {
   "name": "laysense/dns",
   "type": "library",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "description": "Webman plugin laysense/dns. You can making a DNS Server with Webman now",
   "require": {
   },

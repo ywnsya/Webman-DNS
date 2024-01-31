@@ -17,7 +17,7 @@ class DnsProcess
         #echo "\n Type:$type \n Domain: $name\n Client IP: $rip \n";
 
         $dns=new DnsController;
-        $return=$dns->DNS($type,$name,$rip,$data->id,$data->query);
+        $return=$dns->DNS($type,$name,$rip,$data->id,$data->query,$data->traffic);
         $connection->send($return);
     }
 

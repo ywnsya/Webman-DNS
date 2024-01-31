@@ -22,6 +22,7 @@ Webman的DNS服务器插件，可以实现Webman启动时运行一个DNS服务�
 * TXT
 
 最新版本已经增加了CNAME+A和CNAME+AAAA方式
+0.1.0版本之后，版本号跟随WorkermanDNS,同时支持Flag类型
 
 ---
 
@@ -99,7 +100,7 @@ class DnsController
 }
 ```
 
-具体的使用方式请参照 [Workerman-DNS](https://git.laysense.com/enoch/Workerman-DNS) ([Github](https://github.com/ywnsya/workerman-dns)) 下的start.php
+具体的使用方式请参照 [Workerman-DNS](https://git.laysense.com/enoch/Workerman-DNS/src/branch/master/readme.md) ([Github](https://github.com/ywnsya/workerman-dns)) 下的start.php与readme.md
 
 
 ## 赞助(我不要脸)
