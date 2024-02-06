@@ -10,7 +10,7 @@ use dnstools\ipv6;      #用于IPv6相关
 
 class DnsController
 {
-    public function DNS($type,$name,$rip,$id,$query,$traffic=0)
+    public function DNS($type,$name,$rip,$ip,$id,$query,$traffic=0)
     {
         #输出信息
         #echo "\n Type:$type \n Domain: $name\n Client IP: $rip \n";
@@ -44,8 +44,7 @@ class DnsController
         if(!isset($send['ttl'])){
             $send['ttl']=0;
         }
-        $send['info']=json_encode(['domain'=>$name,'querytype'=>$type,'answertype'=>$send['type'],'ip'=>$rip,'ttl'=>$send['ttl'],'detail'=>$send['detail']]);
-        $return=json_encode($send);
+        $send['info']=json_encode(['domain'=>$data->name,'querytype'=>$data->type,'answertype'=>$send['type'],'ip'=>$ip,'rip'=>$rip,'ttl'=>$send['ttl'],'detail'=>$send['detail']]);        $return=json_encode($send);
         return $return;
     }
 }
