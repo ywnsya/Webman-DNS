@@ -100,7 +100,7 @@ class DnsController
 }
 ```
 
-具体的使用方式请参照 [Workerman-DNS](https://git.laysense.com/enoch/Workerman-DNS/src/branch/master/readme.md) ([Github](https://github.com/ywnsya/workerman-dns)) 下的start.php与readme.md
+具体的使用方式请参照 [Workerman-DNS](https://git.laysense.com/Laysense/Workerman-DNS/src/branch/master/readme.md) ([Github](https://github.com/ywnsya/workerman-dns)) 下的start.php与readme.md
 
 
 ## 赞助(我不要脸)
